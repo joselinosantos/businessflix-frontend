@@ -28,3 +28,23 @@ body {
   font-family: "Segoe UI", "Lato", Tahoma, Geneva, Verdana, sans-serif;
   color: #fff;
 }
+
+.area-carousel {
+  background-color: #000;
+  img {
+    opacity: 0.8;
+  }
+
+  #carousel {
+    width: 100%;
+
+    img {
+      width: 100%;
+      height: 400px;
+    }
+
+    .carousel-control-next {
+      width: 40%;
+    }
+  }
+}
