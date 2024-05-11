@@ -48,3 +48,16 @@ body {
     }
   }
 }
+
+footer {
+  background-color: #0f1116;
+
+  & .social-media {
+    font-size: 1.6em;
+  }
+
+  a {
+    color: #fff;
+    text-decoration: none;
+  }
+}
