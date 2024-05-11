@@ -20,6 +20,7 @@
 * Paleta de cores consistente e com ótimo contraste
 3 A imagens, títulos e outros dados usados nos exemplos foram todos gerados por IA, portanto não viola nenhum direito autoral.
 4 A interface contém elementos não funcionais apenas para manter o visual agradável e consistente
+5 Qualquer semelhança com outras interfaces conhecidas não é mera coeciência 😆
 
 ## Processos de Desenvolvimento
 1 Desenvolvido em componentes para facilitar a organização e manutenção
