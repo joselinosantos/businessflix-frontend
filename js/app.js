@@ -1,5 +1,6 @@
 import { titulosService } from './service/titulos-service.js';
 
+const listaRecomendados = document.querySelector('.recomendados .card-deck')
 const listaSeries = document.querySelector('.series .card-deck')
 const listaBooks = document.querySelector('.livros .card-deck')
 
@@ -17,6 +18,21 @@ const criarCard = (titulo, autor, capa) => {
             </a>
         </div>`
     return card;
+}
+
+export const listarItensRecomendacao = async () => {
+    try {
+        let resposta = await titulosService.listar(listaRecomendados, 'series');
+
+        resposta.slice(0, 4).forEach((item) => {
+            let card = criarCard(item.titulo, item.autor, item.capa)
+            let cardBody = card.querySelector('.card-body')
+
+            listaRecomendados.appendChild(card)
+        })
+    } catch (error) {
+        listaRecomendados.innerHTML = `<p class="alert alert-danger">Não foi possível carregar a lista de itens recomendados! ${error}</p>`;
+    }
 }
 
 const listarSeries = async () => {
@@ -50,3 +66,4 @@ const listarBooks = async () => {
 
 listarSeries()
 listarBooks()
+listarItensRecomendacao()
