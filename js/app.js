@@ -1,6 +1,7 @@
 import { titulosService } from './service/titulos-service.js';
 
 const listaSeries = document.querySelector('.series .card-deck')
+const listaBooks = document.querySelector('.livros .card-deck')
 
 const criarCard = (titulo, autor, capa) => {
     const card = document.createElement('div');
@@ -25,10 +26,6 @@ const listarSeries = async () => {
         resposta.slice(0, 4).forEach((item) => {
             let card = criarCard(item.titulo, item.autor, item.capa)
 
-            let cardBody = card.querySelector('.card-body')
-            card.addEventListener('mouseover', () => {
-                cardBody.style.display = "flex"
-            })
             listaSeries.appendChild(card)
         })
     } catch (error) {
@@ -36,4 +33,20 @@ const listarSeries = async () => {
     }
 }
 
+const listarBooks = async () => {
+    try {
+        const resposta = await titulosService.listar(listaBooks, 'books');
+
+        resposta.slice(0, 4).forEach((item) => {
+            let card = criarCard(item.titulo, item.autor, item.capa)
+            let cardBody = card.querySelector('.card-body')
+
+            listaBooks.appendChild(card)
+        })
+    } catch (error) {
+        listaBooks.innerHTML = `<p class="alert alert-danger">Não foi possível carregar a lista de livros! ${error}</p>`;
+    }
+}
+
 listarSeries()
+listarBooks()
