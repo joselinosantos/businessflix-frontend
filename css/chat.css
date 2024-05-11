@@ -1,0 +1,63 @@
+.card-chat {
+  width: 20rem;
+  border: none;
+  padding: 8px;
+  border-top: 3px solid #25ccff;
+  left: 80%;
+  background-color: #242424;
+}
+
+.chat-header h3 {
+  font-size: 1em;
+}
+
+.chat-messages {
+  height: 250px;
+  display: block;
+  overflow: auto;
+  border-bottom: 1px solid #f4f4f4;
+
+  & .card-chat {
+    & .chat-header {
+      padding: 10px;
+      border-bottom: 1px solid #f4f4f4;
+
+      & h3 {
+        font-size: 18px;
+        color: #fff;
+      }
+    }
+  }
+
+  & .chat-msg {
+    margin-bottom: 20px;
+  }
+
+  & .chat-text {
+    border-radius: 5px;
+    padding: 5px 10px;
+    background: #303030;
+    margin-bottom: 10px;
+    color: #fff;
+  }
+}
+
+.card-footer {
+  & .btn-enviar {
+    border-radius: 0px 6px 6px 0px;
+  }
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  .card-chat {
+    left: 1%;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .card-chat {
+    left: 62%;
+  }
+}
