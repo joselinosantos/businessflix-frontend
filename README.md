@@ -4,9 +4,9 @@
 ![Businessflix](https://github.com/joselinosantos/businessflix-backend/blob/master/imagens/businessflix.png)
 
 ## Linguagens e Bibliotecas
-1 [HTML](https://www.w3schools.com/html/): Linguagem de marcação padrão da Web
-2 [CSS](https://www.w3schools.com/Css/): Linguagem de folha de estilo padrão da Web
-3 [JavaScript](https://developer.mozilla.org/en-US/docs/Web/javascript): Linguagem de script Web padrão dos navegadores
+1 [HTML](https://www.w3schools.com/html/): Linguagem de marcação padrão da Web<br>
+2 [CSS](https://www.w3schools.com/Css/): Linguagem de folha de estilo padrão da Web<br>
+3 [JavaScript](https://developer.mozilla.org/en-US/docs/Web/javascript): Linguagem de script Web padrão dos navegadores<br>
 4 [Bootstrap](https://getbootstrap.com/docs/5.0/getting-started/introduction/): Biblitoeca bem completa muito utilizada para acelerar o processo de desenvolvimento
 
 ## Características gerais
