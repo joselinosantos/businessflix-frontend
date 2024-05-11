@@ -1,0 +1,101 @@
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  header {
+    .container {
+      width: 90%;
+      margin: 0;
+    }
+  }
+  .search {
+    width: 100%;
+    margin-top: 8px;
+  }
+
+  .em-progresso {
+    & .card-deck {
+      & a {
+        width: 87%;
+
+        & .card img {
+          width: 100px;
+        }
+      }
+    }
+  }
+
+  .card-deck {
+    & .card {
+      width: 100%;
+    }
+  }
+
+  .chat-messages {
+    display: block;
+  }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .em-progresso {
+    & .card-deck {
+      flex-direction: row;
+
+      & a {
+        width: 48%;
+
+        & .card img {
+          width: 100px;
+        }
+      }
+    }
+  }
+
+  .card-deck {
+    flex-wrap: wrap;
+    gap: 16px;
+
+    & .card {
+      width: 45%;
+
+      & img {
+        width: 90%;
+      }
+    }
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  header {
+    .search {
+      width: 100%;
+      margin-top: 10px;
+    }
+  }
+
+  .em-progresso {
+    & .card-deck {
+      justify-content: space-between;
+
+      & a {
+        width: 32%;
+
+        & .card {
+          & img {
+            width: 100px;
+          }
+        }
+      }
+    }
+  }
+
+  .card-deck {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+
+    & .card {
+      width: 45%;
+    }
+  }
+}
