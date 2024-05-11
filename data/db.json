@@ -1,0 +1,151 @@
+{
+  "series": [
+    {
+      "id": 1,
+      "titulo": "Entrando no mundo dos negócios",
+      "autor": "Businessflix",
+      "capa": "serie1.png",
+      "descricao": "Uma introdução abrangente aos conceitos básicos do mundo empresarial.",
+      "categoria": "Fundamentos"
+    },
+    {
+      "id": 2,
+      "titulo": "Fundamentos de marketing",
+      "autor": "MarketMasters",
+      "capa": "serie2.png",
+      "descricao": "Aprenda os princípios essenciais do marketing para atrair e fidelizar clientes.",
+      "categoria": "Marketing"
+    },
+    {
+      "id": 3,
+      "titulo": "Finanças para empreendedores",
+      "autor": "Finance Academy",
+      "capa": "serie3.png",
+      "descricao": "Domine as ferramentas financeiras necessárias para gerir seu negócio com sucesso.",
+      "categoria": "Finanças"
+    },
+    {
+      "id": 4,
+      "titulo": "Gestão de pessoas e liderança",
+      "autor": "Leadership Lab",
+      "capa": "serie5.png",
+      "descricao": "Desenvolva habilidades de liderança e aprenda a motivar e gerenciar equipes.",
+      "categoria": "Liderança"
+    },
+    {
+      "id": 5,
+      "titulo": "Estratégias de vendas",
+      "autor": "Sales Pro",
+      "capa": "serie5.png",
+      "descricao": "Técnicas e estratégias para aumentar suas vendas e fechar mais negócios.",
+      "categoria": "Vendas"
+    },
+    {
+      "id": 6,
+      "titulo": "Análise de dados para negócios",
+      "autor": "Data Insights",
+      "capa": "serie.png",
+      "descricao": "Aprenda a usar dados para tomar decisões estratégicas e impulsionar o crescimento.",
+      "categoria": "Análise de dados"
+    },
+    {
+      "id": 7,
+      "titulo": "Empreendedorismo e inovação",
+      "autor": "Startup Central",
+      "capa": "serie.png",
+      "descricao": "Explore o mundo do empreendedorismo e aprenda a transformar ideias em negócios.",
+      "categoria": "Empreendedorismo"
+    },
+    {
+      "id": 8,
+      "titulo": "Negociação e comunicação eficaz",
+      "autor": "Comm Skills",
+      "capa": "serie.png",
+      "descricao": "Melhore suas habilidades de comunicação e negociação para alcançar resultados positivos.",
+      "categoria": "Comunicação"
+    },
+    {
+      "id": 9,
+      "titulo": "Gestão de projetos",
+      "autor": "Project Management Pro",
+      "capa": "serie.png",
+      "descricao": "Planejamento e execução de projetos com eficiência e sucesso.",
+      "categoria": "Gestão de Projetos"
+    },
+    {
+      "id": 10,
+      "titulo": "Branding e posicionamento de marca",
+      "autor": "Brand Experts",
+      "capa": "serie.png",
+      "descricao": "Construa uma marca forte e posicione-se de forma estratégica no mercado.",
+      "categoria": "Branding"
+    },
+
+    {
+      "id": 11,
+      "titulo": "Introdução à Exportação",
+      "autor": "Global Trade Academy",
+      "capa": "serie.png",
+      "descricao": "Aprenda os fundamentos da exportação e como expandir seus negócios para o mercado internacional.",
+      "categoria": "Exportação"
+    },
+    {
+      "id": 12,
+      "titulo": "Logística e Documentação para Exportação",
+      "autor": "Export Logistics Pro",
+      "capa": "serie.png",
+      "descricao": "Domine os processos logísticos e a documentação necessária para exportar com sucesso.",
+      "categoria": "Exportação"
+    },
+    {
+      "id": 13,
+      "titulo": "Marketing e Vendas Internacionais",
+      "autor": "Global Marketers",
+      "capa": "serie.png",
+      "descricao": "Estratégias de marketing e vendas adaptadas para o mercado internacional.",
+      "categoria": "Exportação"
+    },
+    {
+      "id": 14,
+      "titulo": "IA para Tomada de Decisão",
+      "autor": "AI Business Solutions",
+      "capa": "serie.png",
+      "descricao": "Como usar a inteligência artificial para tomar decisões estratégicas mais eficazes.",
+      "categoria": "IA para Negócios"
+    },
+    {
+      "id": 15,
+      "titulo": "Automatização de Processos com IA",
+      "autor": "AI Automation Experts",
+      "capa": "serie.png",
+      "descricao": "Explore o potencial da IA para automatizar tarefas e otimizar processos de negócios.",
+      "categoria": "IA para Negócios"
+    }
+  ],
+  "books": [
+    {
+      "id": 1,
+      "titulo": "A estratégia do Oceano Azul",
+      "autor": "W Chan Kim",
+      "capa": "livro1.jpg"
+    },
+    {
+      "id": 2,
+      "titulo": "Eu vendedor",
+      "autor": "Paulo Maccedo",
+      "capa": "livro2.jpg"
+    },
+    {
+      "id": 3,
+      "titulo": "Os 7 hábitos das pessoas altamente eficazes",
+      "autor": "Stephen R. Covey",
+      "capa": "livro3.png"
+    },
+    {
+      "id": 4,
+      "titulo": "Datascience para negócios",
+      "autor": "Foster",
+      "capa": "livro4.png"
+    }
+  ]
+}
