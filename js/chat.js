@@ -14,6 +14,7 @@ async function enviarMensagem() {
     // Mensagem usuario
     let novaMensagem = criaMensagem(mensagem);
     chat.appendChild(novaMensagem);
+    vaiParaFinalDoChat();
 
     // Mensagem chatbot Businesschat
     var textoResposta = '';
@@ -23,6 +24,7 @@ async function enviarMensagem() {
 
     let novaMensagemBot = criaMensagem(textoResposta);
     chat.appendChild(novaMensagemBot);
+    vaiParaFinalDoChat();
 
     listarItensRecomendacao();
 }
@@ -38,6 +40,10 @@ function criaMensagem(mensagem) {
     </div>`;
 
     return caixaMensagem;
+}
+
+function vaiParaFinalDoChat() {
+    chat.scrollTop = chat.scrollHeight;
 }
 
 btnEnviar.addEventListener('click', enviarMensagem);
