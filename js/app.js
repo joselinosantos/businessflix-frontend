@@ -23,6 +23,10 @@ const criarCard = (titulo, autor, capa) => {
 export const listarItensRecomendacao = async () => {
     try {
         let lista = '';
+        const loading = document.querySelector('.loading');
+        loading.style.display = 'flex';
+        listaSeries.innerHTML = '';
+
         // Fluxo principal: Requisição de recomendações
         let resposta = await titulosService.listarRecomendados(listaRecomendados);
 
@@ -40,6 +44,8 @@ export const listarItensRecomendacao = async () => {
             // Fluxo alternativo: Executar requisição para os dados eventuais
             lista = await titulosService.listar(listaRecomendados, 'series');
         }
+
+        loading.style.display = 'none';
 
         lista.slice(0, 4).forEach((item) => {
             let card = criarCard(item.titulo, item.autor, item.capa)
