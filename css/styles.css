@@ -1,0 +1,30 @@
+/* CORES */
+.text-blue {
+  color: #25ccff;
+}
+
+.bg-blue {
+  background-color: #25ccff;
+}
+
+.btn-blue {
+  background-color: #25ccff;
+  color: #fff;
+}
+
+.btn-blue:hover {
+  background-color: #25ccff;
+  color: #fff;
+  opacity: 0.9;
+}
+
+::selection {
+  color: #fff;
+  background: #25ccff;
+}
+
+body {
+  background-color: #000000;
+  font-family: "Segoe UI", "Lato", Tahoma, Geneva, Verdana, sans-serif;
+  color: #fff;
+}
