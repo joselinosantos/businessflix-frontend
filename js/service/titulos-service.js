@@ -9,9 +9,13 @@ const listar = async (container, endpoint) => {
     }
 }
 
-export const listarRecomendados = async () => {
-    let resposta = await fetch(`${API_BUSINESS}/recomendacoes`);
-    return resposta.json();
+export const listarRecomendados = async (container) => {
+    try {
+        let resposta = await fetch(`${API_BUSINESS}/recomendacoes`);
+        return resposta.json();
+    } catch (error) {
+        container.innerHTML = `<p class="alert alert-danger">Não foi possível realizar a requisição do endpoint /recomendacoes! ${error}</p>`;
+    }
 }
 
 export const titulosService = {

@@ -24,21 +24,17 @@ export const listarItensRecomendacao = async () => {
     try {
         let lista = '';
         // Fluxo principal: Requisição de recomendações
-        let resposta = await titulosService.listarRecomendados(listaRecomendados)
-            .then((res) => {
-                return res;
-            })
-            .catch(() => {
-                return null;
-            });
+        let resposta = await titulosService.listarRecomendados(listaRecomendados);
+
+        listaRecomendados.textContent = '';
 
         if (resposta && resposta.resposta) {
             let recomendacoes = resposta.resposta;
-            listaRecomendados.textContent = '';
-
             if (recomendacoes.includes('json')) {
                 recomendacoes = recomendacoes.replace('```json', '').replace('```', '')
                 lista = JSON.parse(recomendacoes);
+            } else{
+                lista = resposta.resposta;
             }
         } else {
             // Fluxo alternativo: Executar requisição para os dados eventuais

@@ -1,4 +1,5 @@
 import { chatService } from "./service/chat-service.js";
+import { listarItensRecomendacao } from "./app.js"
 
 const chat = document.querySelector('.chat-messages')
 const input = document.querySelector('.input-mensagem')
@@ -22,6 +23,8 @@ async function enviarMensagem() {
 
     let novaMensagemBot = criaMensagem(textoResposta);
     chat.appendChild(novaMensagemBot);
+
+    listarItensRecomendacao();
 }
 
 function criaMensagem(mensagem) {
