@@ -22,12 +22,31 @@ const criarCard = (titulo, autor, capa) => {
 
 export const listarItensRecomendacao = async () => {
     try {
-        let resposta = await titulosService.listar(listaRecomendados, 'series');
+        let lista = '';
+        // Fluxo principal: Requisição de recomendações
+        let resposta = await titulosService.listarRecomendados(listaRecomendados)
+            .then((res) => {
+                return res;
+            })
+            .catch(() => {
+                return null;
+            });
 
-        resposta.slice(0, 4).forEach((item) => {
+        if (resposta && resposta.resposta) {
+            let recomendacoes = resposta.resposta;
+            listaRecomendados.textContent = '';
+
+            if (recomendacoes.includes('json')) {
+                recomendacoes = recomendacoes.replace('```json', '').replace('```', '')
+                lista = JSON.parse(recomendacoes);
+            }
+        } else {
+            // Fluxo alternativo: Executar requisição para os dados eventuais
+            lista = await titulosService.listar(listaRecomendados, 'series');
+        }
+
+        lista.slice(0, 4).forEach((item) => {
             let card = criarCard(item.titulo, item.autor, item.capa)
-            let cardBody = card.querySelector('.card-body')
-
             listaRecomendados.appendChild(card)
         })
     } catch (error) {
@@ -55,7 +74,6 @@ const listarBooks = async () => {
 
         resposta.slice(0, 4).forEach((item) => {
             let card = criarCard(item.titulo, item.autor, item.capa)
-            let cardBody = card.querySelector('.card-body')
 
             listaBooks.appendChild(card)
         })

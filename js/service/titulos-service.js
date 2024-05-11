@@ -1,4 +1,4 @@
-import { API_DATA } from "../api.js";
+import { API_DATA, API_BUSINESS } from "../api.js";
 
 const listar = async (container, endpoint) => {
     try {
@@ -9,6 +9,12 @@ const listar = async (container, endpoint) => {
     }
 }
 
+export const listarRecomendados = async () => {
+    let resposta = await fetch(`${API_BUSINESS}/recomendacoes`);
+    return resposta.json();
+}
+
 export const titulosService = {
-    listar
+    listar,
+    listarRecomendados
 }
